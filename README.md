@@ -1,5 +1,5 @@
 # PaperCode
-The code corresponds to the paper "Two-stage Ship Detection at Long Distances Based on Deep Learning and Slicing"
+The code corresponds to the paper "Two-stage Ship Detection at Long Distances Based on Deep Learning and Slicing Technique"
 
 # 1. Train the model
 ## 1.1 train the first stage using following script

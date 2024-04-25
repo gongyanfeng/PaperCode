@@ -9,6 +9,7 @@ python train second_stage.py
 
 # 2. Test the model
 After training is completed， you can use the following script to test an image:
-
-python predict.py
+python predict.py --img image_path
+例如：
+python predict.py --img ./images/7_5.jpg
    

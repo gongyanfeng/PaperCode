@@ -21,16 +21,13 @@ parser.add_argument('--img',type=str,default="", help='input the image for test'
 opt = parser.parse_args()
 
 model = YOLO("best_skyline_on_image_128.pt")
-#model = YOLO("best1.pt")
 
 # 初始化检测模型
 detection_model = AutoDetectionModel.from_pretrained(
     model_type='yolov8',
-    #model_path='./best2.pt',
     model_path='best_ship_on_slice_128.pt',
     confidence_threshold=0.3,
-    #device="cpu",  # or 'cuda:0'
-    device="cuda:0",
+    device="cuda:0", #or "cpu"
 )
 
 assert opt.img!="","please input the image for test!"
@@ -56,13 +53,11 @@ for r in results:
             int_bbox = list(map(int,bbox))
             dst = img[int_bbox[1]:int_bbox[3], int_bbox[0]:int_bbox[2]]   # 裁剪坐标为[y0:y1, x0:x1]
             #dst = cv2.cvtColor(dst, cv2.COLOR_RGB2BGR) #gyf: 从img裁剪下来的dst区域为BGR的，需要转成RBG
-            print("gyf:dst type={}".format(type(dst)))
             cv2.imwrite(skyline_result,dst)
             result = get_sliced_prediction(
                 img, #added by gyf
                 dst,
                 detection_model,
-                #slice_height = 24,#35, # #14 for image 1.jpg,
                 slice_height=dst.shape[0],
                 slice_width = 128,
                 overlap_height_ratio = 0.2,
@@ -78,8 +73,6 @@ for r in results:
                 print("gyf:bbox from detection results:x1={},y1={},x2={},y2={}".format(bbox.minx,bbox.miny,bbox.maxx,bbox.maxy))
 
             # 保存文件结果
-            #export_dir = "result"
-            #file_name = "res-slice"
             file_name = base_prefix
             #font        = ImageFont.truetype(font='model_data/simhei.ttf', size=np.floor(3e-2 * image.size[1] + 0.5).astype('int32'))
             #font        = ImageFont.truetype(font='model_data/simhei.ttf', size=np.floor(3e-2 * 35 + 0.5).astype('int32'))

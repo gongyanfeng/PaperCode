@@ -1,0 +1,122 @@
+{
+    "os": "Linux-4.15.0-142-generic-x86_64-with-glibc2.23",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-04-18T09:02:01.840708",
+    "startedAt": "2024-04-18T09:02:01.757107",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/gyf/e/yolov8-sahi/yolov8_and_sahi/train_second_stage.py",
+    "codePathLocal": "train_second_stage.py",
+    "codePath": "train_second_stage.py",
+    "host": "gyf-s2",
+    "username": "gyf",
+    "executable": "/home/gyf/anaconda3/envs/yolov8-gyf/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 4492.4978125,
+        "min": 800.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4580.871,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4404.872,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4479.02,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4498.262,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4400.761,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4403.948,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4526.829,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4584.812,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4587.76,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4402.723,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4599.898,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4405.982,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4610.971,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4401.481,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4537.304,
+            "min": 800.0,
+            "max": 4800.0
+        },
+        {
+            "current": 4454.471,
+            "min": 800.0,
+            "max": 4800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3382949829102,
+            "used": 141.26940155029297
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090 Ti",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 31.312156677246094
+    }
+}

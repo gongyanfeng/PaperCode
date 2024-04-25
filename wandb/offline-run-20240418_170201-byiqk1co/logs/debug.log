@@ -1,0 +1,25 @@
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Current SDK version is 0.16.0
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Configure stats pid to 22054
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Loading settings from /home/gyf/.config/wandb/settings
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Loading settings from /home/gyf/e/yolov8-sahi/yolov8_and_sahi/wandb/settings
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_second_stage.py', 'program_abspath': '/home/gyf/e/yolov8-sahi/yolov8_and_sahi/train_second_stage.py', 'program': '/home/gyf/e/yolov8-sahi/yolov8_and_sahi/train_second_stage.py'}
+2024-04-18 17:02:01,759 INFO    MainThread:22054 [wandb_setup.py:_flush():76] Applying login settings: {'mode': 'offline'}
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:_log_setup():524] Logging user logs to /home/gyf/e/yolov8-sahi/yolov8_and_sahi/wandb/offline-run-20240418_170201-byiqk1co/logs/debug.log
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:_log_setup():525] Logging internal logs to /home/gyf/e/yolov8-sahi/yolov8_and_sahi/wandb/offline-run-20240418_170201-byiqk1co/logs/debug-internal.log
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:init():564] calling init triggers
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'task': 'detect', 'mode': 'train', 'model': 'yolov8n.pt', 'data': '/home/gyf/e/yolov8-sahi/yolov8_and_sahi/ultralytics/cfg/datasets/coco128.yaml', 'epochs': 300, 'patience': 50, 'batch': 16, 'imgsz': 640, 'save': True, 'save_period': -1, 'cache': False, 'device': None, 'workers': 8, 'project': None, 'name': None, 'exist_ok': False, 'pretrained': True, 'optimizer': 'auto', 'verbose': True, 'seed': 0, 'deterministic': True, 'single_cls': False, 'rect': False, 'cos_lr': False, 'close_mosaic': 10, 'resume': False, 'amp': True, 'fraction': 1.0, 'profile': False, 'freeze': None, 'overlap_mask': True, 'mask_ratio': 4, 'dropout': 0.0, 'val': True, 'split': 'val', 'save_json': False, 'save_hybrid': False, 'conf': None, 'iou': 0.7, 'max_det': 300, 'half': False, 'dnn': False, 'plots': True, 'source': None, 'show': False, 'save_txt': False, 'save_conf': False, 'save_crop': False, 'show_labels': True, 'show_conf': True, 'vid_stride': 1, 'stream_buffer': False, 'line_width': None, 'visualize': False, 'augment': False, 'agnostic_nms': False, 'classes': None, 'retina_masks': False, 'boxes': True, 'format': 'torchscript', 'keras': False, 'optimize': False, 'int8': False, 'dynamic': False, 'simplify': False, 'opset': None, 'workspace': 4, 'nms': False, 'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 7.5, 'cls': 0.5, 'dfl': 1.5, 'pose': 12.0, 'kobj': 1.0, 'label_smoothing': 0.0, 'nbs': 64, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0, 'cfg': None, 'tracker': 'botsort.yaml', 'save_dir': 'runs/detect/train3'}
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:init():614] starting backend
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [wandb_init.py:init():618] setting up manager
+2024-04-18 17:02:01,760 INFO    MainThread:22054 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-18 17:02:01,761 INFO    MainThread:22054 [wandb_init.py:init():624] backend started and connected
+2024-04-18 17:02:01,763 INFO    MainThread:22054 [wandb_init.py:init():716] updated telemetry
+2024-04-18 17:02:01,763 INFO    MainThread:22054 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2024-04-18 17:02:01,766 INFO    MainThread:22054 [wandb_init.py:init():800] starting run threads in backend
+2024-04-18 17:02:03,296 INFO    MainThread:22054 [wandb_run.py:_console_start():2233] atexit reg
+2024-04-18 17:02:03,296 INFO    MainThread:22054 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-04-18 17:02:03,296 INFO    MainThread:22054 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-04-18 17:02:03,296 INFO    MainThread:22054 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-04-18 17:02:03,297 INFO    MainThread:22054 [wandb_init.py:init():841] run started, returning control to user process

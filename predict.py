@@ -36,20 +36,20 @@ base_name = os.path.basename(opt.img)
 base_prefix = base_name.split(".")[0]
 skyline_result = base_prefix+"_skyline."+base_name.split(".")[-1]
 export_dir = "result"
-print("gyf:base_name={},base_prefix={},skyline_result={}".format(base_name,base_prefix,skyline_result))
+
 #results = model("7_5.jpg")  # predict on an image
 results = model(opt.img)  # predict on an image
 print("gyf:results={}".format(results))
 #img = cv2.imread("7_5.jpg",1)
 img = cv2.imread(opt.img,1)
 for r in results:
-    print("gyf:r.boxes={}".format(r.boxes.xyxy))
-    print("gyf:r.boxes.shape={}".format(r.boxes.xyxy.shape))
+    # print("gyf:r.boxes={}".format(r.boxes.xyxy))
+    # print("gyf:r.boxes.shape={}".format(r.boxes.xyxy.shape))
     boxes_list = r.boxes.xyxy.tolist()
-    print("gyf:len(boxes_list) from first_stage={}".format(len(boxes_list)))
+    #print("gyf:len(boxes_list) from first_stage={}".format(len(boxes_list)))
     if len(boxes_list)>0:      
         for bbox in boxes_list:
-            print("gyf:bbox of skyline={}".format(bbox))
+            #print("gyf:bbox of skyline={}".format(bbox))
             int_bbox = list(map(int,bbox))
             dst = img[int_bbox[1]:int_bbox[3], int_bbox[0]:int_bbox[2]]   # 裁剪坐标为[y0:y1, x0:x1]
             #dst = cv2.cvtColor(dst, cv2.COLOR_RGB2BGR) #gyf: 从img裁剪下来的dst区域为BGR的，需要转成RBG
